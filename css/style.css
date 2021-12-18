@@ -1,0 +1,18 @@
+body>header>nav {
+    background: rgba(87, 58, 3, 0.5);
+    color: #080a0b;
+}
+
+div {
+    color: #000;
+}
+
+body>span>ul {
+    background: rgb(24, 117, 117);
+    color: #000
+}
+
+body>div>ol {
+    background: rgb(73, 47, 109);
+    color: #fff
+}

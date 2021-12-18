@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <title> Themes tables</title>
+    <link href="text/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header height="100">
+        <h1>PIZZA PLANTERIUM - Greetings!</h1>
+    </header>
+    <main>
+        <section>
+            <video width="540" height="320" autoplay loop="3">
+                <source src="./videos/Pizza.mp4" type="video/mp4">
+                <source src="./videos/bread_and_pizza.mov" type="video/mov">
+                Your browser does not support HTML5.
+            </video>
+        </section>
+        <section>
+            <audio width="540" controls loop>
+            <source src="./audios/pizzathefood.mp3" type="audio/mp3">
+            </audio>
+        </section>
+        <table border="1">
+            <thead>
+                <tr>
+                    Chrysalis Pizza Menu
+                    <br/>
+                    <h2><i><b> Please note menu contains Gluton</b></i></h2>
+                    <b> See Gluton Level below</b>
+                    <br/>
+                    <td>Level</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> </td>
+                    <td> none</td>
+                </tr>
+                <tr>
+                    <td> * </td>
+                    <td> low </td>
+                </tr>
+                <tr>
+                    <td> ** </td>
+                    <td> medium </td>
+                </tr>
+                <tr>
+                    <td> *** </td>
+                    <td> high </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <table border="1" , width="500">
+            <thead>
+                <tr>
+
+                    <th>Type</th>
+                    <th>Ingredients</th>
+                    <th>Size</th>
+                    <th>price</th>
+                    <th>Notes</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Pepperoni </td>
+                    <td> Pepperoni, Monzza Cheese </td>
+                    <td> 20 cm </td>
+                    <td> $18.99 </td>
+                    <td> *** </td>
+                </tr>
+                <tr>
+                    <td> Mossala </td>
+                    <td><b> Chicken Mossale </b></td>
+                    <td> 20 cm </td>
+                    <td> $19.99 </td>
+                    <td> ** </td>
+                </tr>
+                <tr>
+                    <td> Briyani </td>
+                    <td> Chicken Briyani </td>
+                    <td> 20 cm </td>
+                    <td> $19.99 </td>
+                    <td> *** </td>
+                </tr>
+                <tr>
+                    <td> G-Chicken </td>
+                    <td><b> 2 wings/2 filet/ 2 drum stick </b></td>
+                    <td> 6 Pieces </td>
+                    <td> $7.99 </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td> Hawaiian </td>
+                    <td> Ham and Pineapple</td>
+                    <td> 20 cm </td>
+                    <td> $21.99 </td>
+                    <td> *** </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+        <section id="contact-form">
+            <h2> Place Order</h2>
+            <form method="post" action="place-order.php">
+                <h4>Delivery</h4>
+                <input name="deliverymethod" type="radio" value="delivery" />Delivery<br/>
+                <input name="deliverymethod" type="radio" value="pickup" />Pickup
+
+                <h4>Address</h4>
+                <input name="name" placeholder="Name" class="1g-input" /><br/>
+                <input name="address1" placeholder="Address" class="1g-input" /><br/>
+                <input name="address2" placeholder="Address Line 2 " class="1g-input" /><br/>
+                <input name="city" placeholder="City" class="sm-input" /><br/>
+                <input name="state" placeholder="State" class="sm-input" /><br/>
+                <input name="zip" placeholder="Zip code" class="sm-input" /><br/>
+                <select name="country dial code">
+                    <option value="31">+31 - The Netherlands</option>
+                    <option value="49">+49 - Germany</option>
+                </select><br/>
+                <input name="mobile" type="number" onkeypress="return onlyNumberKey(event)" maxlength="11" placeholder="06...." class="sm-input" />
+                <br/>
+                <br/>
+                <h4>Size</h4>
+                <select name="size">
+                        <option value="9">9" - $9.99</option>
+                        <option value="12">12" - $13.99</option>
+                        <option value="16">16" - $15.99</option>
+                        <option value="18">18" - $17.99</option>
+                        <option value="20">20" - $19.99</option>
+                        <option value="21">21" - $21.99</option>
+                        <option value="23">23" - $24.00</option>
+                        <option value="24">24" - $25.50</option>
+
+                    </select>
+
+
+                <h4>Ingredients</h4>
+                <input name="ingredient" type="checkbox" /> Pepperoni <br/>
+                <input name="ingredient" type="checkbox" /> Salami <br/>
+                <input name="ingredient" type="checkbox" /> Bacon <br/>
+                <input name="ingredient" type="checkbox" /> Chicken <br/>
+                <input name="ingredient" type="checkbox" /> Italian Sausage <br/>
+                <input name="ingredient" type="checkbox" value="onion" /> Onion <br/>
+                <input name="ingredient" type="checkbox" value="garlic" /> Garlic <br/>
+                <br/>
+                <button type="submit">Place Order</button>
+            </form>
+
+        </section>
+    </main>
+
+</body>
+<br/>
+<footer>&copy; Copyright &nbsp; 2021</footer>
+
+</html>
